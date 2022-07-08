@@ -3,11 +3,12 @@ import "./Button.css";
 
 function Button(props) {
   const style = {
+    btnText: "Default",
     variant: null,
     disableShadow: null,
-    disabled: null,
+    disabled: false,
     size: null,
-    btn_color: null,
+    color: null,
     startIcon: null,
     endIcon: null,
     ...props,
@@ -29,19 +30,20 @@ function Button(props) {
         : ""
     }
     ${
-      style.btn_color === "primary"
+      style.color === "primary"
         ? "primary"
-        : style.btn_color === "secondary"
+        : style.color === "secondary"
         ? "secondary"
-        : style.btn_color === "danger"
+        : style.color === "danger"
         ? "danger"
         : ""
     }
     `}
+      disabled={style.disabled ? true : false}
     >
       <div className="btn-text">
         <i className={style.startIcon && style.startIcon}></i>
-        <p>Default</p>
+        <p>{style.btnText}</p>
         <i className={style.endIcon && style.endIcon}></i>
       </div>
     </button>

@@ -34,13 +34,13 @@ ul {
 .sidebar {
   width: 237px;
   height: 1159px;
-  background-color: blue;
+  background-color: #fafbfd;
 }
 
 .contents {
   width: 1203px;
   height: 1024px;
-  background-color: red;
+  background-color: #ffffff;
 }
 
 footer {

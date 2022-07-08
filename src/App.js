@@ -7,7 +7,7 @@ import Colors from "./components/page/Colors";
 import Typography from "./components/page/Typography";
 import Buttons from "./components/page/Buttons";
 import Spaces from "./components/page/Spaces";
-import Inputs from "./components/page/Inputs";
+import Inputs from "./components/page/input/Inputs";
 import Grid from "./components/page/Grid";
 import NotFound from "./components/page/NotFound";
 
