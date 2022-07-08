@@ -1,0 +1,116 @@
+/**--------------------------------------
+*?btn-text
+**-----------------------------------------*/
+.btn-text {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/**--------------------------------------
+*?default button
+**-----------------------------------------*/
+.default {
+  color: #3f3f3f;
+  background-color: #e3e3e3;
+  width: 81px;
+  height: 36px;
+  border: none;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+
+  margin: 8px 16px;
+
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.default:hover,
+.default:focus {
+  background-color: #aeaeae;
+}
+
+/**--------------------------------------
+*?variant
+**-----------------------------------------*/
+
+.outline {
+}
+
+.outline:hover,
+.outline:focus {
+}
+
+.text {
+}
+
+.text:hover,
+.text:focus {
+}
+
+/**--------------------------------------
+*?disabled
+**-----------------------------------------*/
+
+.disabled {
+}
+.disabled:hover,
+.disabled:focus {
+}
+
+/**--------------------------------------
+*?disableShadow
+**-----------------------------------------*/
+.disableShadow {
+}
+.disableShadow:hover,
+.disableShadow:focus {
+}
+
+/**--------------------------------------
+*?size
+**-----------------------------------------*/
+.sm {
+}
+.sm:hover,
+.sm:focus {
+}
+
+.md {
+}
+.md:hover,
+.md:focus {
+}
+
+.lg {
+}
+.lg:hover,
+.lg:focus {
+}
+
+/**--------------------------------------
+*?color
+**-----------------------------------------*/
+.primary {
+  color: #2962ff;
+}
+.primary:hover,
+.primary:focus {
+}
+
+.secondary {
+}
+.secondary:hover,
+.secondary:focus {
+}
+
+.danger {
+}
+.danger:hover,
+.danger:focus {
+}
