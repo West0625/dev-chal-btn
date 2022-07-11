@@ -42,9 +42,13 @@ function Button(props) {
       disabled={style.disabled ? true : false}
     >
       <div className="btn-text">
-        <i className={style.startIcon && style.startIcon}></i>
+        <i className={style.startIcon && "material-icons"}>
+          {style.startIcon && style.startIcon}
+        </i>
         <p>{style.btnText}</p>
-        <i className={style.endIcon && style.endIcon}></i>
+        <i className={style.endIcon && "material-icons"}>
+          {style.endIcon && style.endIcon}
+        </i>
       </div>
     </button>
   );

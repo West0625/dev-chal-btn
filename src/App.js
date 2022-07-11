@@ -2,14 +2,14 @@ import "./assets/css/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./components/layout/Layout";
-import Home from "./components/page/Home";
-import Colors from "./components/page/Colors";
-import Typography from "./components/page/Typography";
-import Buttons from "./components/page/Buttons";
-import Spaces from "./components/page/Spaces";
+import Home from "./components/page/home/Home";
+import Colors from "./components/page/color/Colors";
+import Typography from "./components/page/typography/Typography";
+import Buttons from "./components/page/button/Buttons";
+import Spaces from "./components/page/space/Spaces";
 import Inputs from "./components/page/input/Inputs";
-import Grid from "./components/page/Grid";
-import NotFound from "./components/page/NotFound";
+import Grid from "./components/page/grid/Grid";
+import NotFound from "./components/page/notfound/NotFound";
 
 const App = () => {
   return (

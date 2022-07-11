@@ -1,65 +1,100 @@
 import "./layout.css";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+// import { useLocation } from "react";
 
 const Layout = () => {
+  const selColor = "selectColor";
+
   return (
     <div className="wrapper">
       <div className="sidebar">
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/">
             <h1>
               <span>Dev</span>Challenge.io
             </h1>
-          </Link>
+          </NavLink>
         </div>
 
         <ul>
           <li>
-            <Link to="/colors">Colors</Link>
+            <NavLink
+              to="/colors"
+              className={({ isActive }) => (isActive ? selColor : undefined)}
+            >
+              Colors
+            </NavLink>
           </li>
           <li>
-            <Link to="/typography">Typography</Link>
+            <NavLink
+              to="/typography"
+              className={({ isActive }) => (isActive ? selColor : undefined)}
+            >
+              Typography
+            </NavLink>
           </li>
           <li>
-            <Link to="/spaces">Spaces</Link>
+            <NavLink
+              to="/spaces"
+              className={({ isActive }) => (isActive ? selColor : undefined)}
+            >
+              Spaces
+            </NavLink>
           </li>
           <li>
-            <Link to="/buttons">Buttons</Link>
+            <NavLink
+              to="/buttons"
+              className={({ isActive }) => (isActive ? selColor : undefined)}
+            >
+              Buttons
+            </NavLink>
           </li>
           <li>
-            <Link to="/inputs">Inputs</Link>
+            <NavLink
+              to="/inputs"
+              className={({ isActive }) => (isActive ? selColor : undefined)}
+            >
+              Inputs
+            </NavLink>
           </li>
           <li>
-            <Link to="/grid">Grid</Link>
+            <NavLink
+              to="/grid"
+              className={({ isActive }) => (isActive ? selColor : undefined)}
+            >
+              Grid
+            </NavLink>
           </li>
         </ul>
       </div>
 
-      <main>
-        <div className="contents">
-          <Outlet />
-        </div>
-      </main>
+      <div className="main-page">
+        <main>
+          <div className="contents">
+            <Outlet />
+          </div>
+        </main>
 
-      <footer>
-        <p>
-          icons:{" "}
-          <span>
-            <a href=" https://google.github.io/material-design-icons/">
-              {" "}
-              https://google.github.io/material-design-icons/
-            </a>
-          </span>
-        </p>
+        <footer>
+          <p>
+            icons:{" "}
+            <span>
+              <a href=" https://google.github.io/material-design-icons/">
+                {" "}
+                https://google.github.io/material-design-icons/
+              </a>
+            </span>
+          </p>
 
-        <p>
-          create by{" "}
-          <span>
-            <a href="/">Westm0625</a>
-          </span>{" "}
-          - devChallenge.io
-        </p>
-      </footer>
+          <p>
+            create by{" "}
+            <span>
+              <a href="/">Westm0625</a>
+            </span>{" "}
+            - devChallenge.io
+          </p>
+        </footer>
+      </div>
     </div>
   );
 };
