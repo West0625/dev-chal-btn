@@ -1,4 +1,4 @@
-import Button from "../../functions/Button.js";
+import Button from "../../functions/Button/Button.js";
 import "./Buttons.css";
 
 const Inputs = () => {

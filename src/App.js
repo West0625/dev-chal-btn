@@ -3,11 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./components/layout/Layout";
 import Home from "./components/page/home/Home";
-import Colors from "./components/page/color/Colors";
+import Colors from "./components/page/colors/Colors";
 import Typography from "./components/page/typography/Typography";
-import Buttons from "./components/page/button/Buttons";
-import Spaces from "./components/page/space/Spaces";
-import Inputs from "./components/page/input/Inputs";
+import Buttons from "./components/page/buttons/Buttons";
+import Spaces from "./components/page/spaces/Spaces";
+import Inputs from "./components/page/inputs/Inputs";
 import Grid from "./components/page/grid/Grid";
 import NotFound from "./components/page/notfound/NotFound";
 
