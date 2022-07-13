@@ -29,7 +29,7 @@ const styles = {
 
 //////////////////////////////////////////////////////////////
 
-const Inputs = () => {
+const Buttons = () => {
   return (
     <>
       <div css={[styles.container]}>
@@ -105,10 +105,9 @@ const Inputs = () => {
               <Button startIcon="keyboard_voice" />
             </div>
           </div>
-          </div>
+        </div>
 
-
-          <div css={[styles.endIcon]}>
+        <div css={[styles.endIcon]}>
           {/* endIconBtn */}
           <div css={[styles.endIconBtn, styles.btn]}>
             <div css={[styles.btnStyle]}>
@@ -201,4 +200,4 @@ const Inputs = () => {
     </>
   );
 };
-export default Inputs;
+export default Buttons;
