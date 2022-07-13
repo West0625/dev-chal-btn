@@ -1,81 +1,159 @@
-import "./layout.css";
-import { NavLink, Outlet } from "react-router-dom";
-// import { useLocation } from "react";
+import { Link, Outlet } from "react-router-dom";
+import { css } from "@emotion/react";
+
+///////////////////////////////////////////////////
+//? css code
+const styles = {
+  logo: css`
+    font-size: 0.75rem;
+    h1 {
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+    span {
+      color: orangered;
+    }
+    a {
+      text-decoration: none;
+    }
+  `,
+  // selectColor: css`
+  //   color: #333;
+  // `,
+  wrapper: css`
+    display: flex;
+    justify-content: space-between;
+  `,
+  sidebar: css`
+    width: 20%;
+    background-color: #fafbfd;
+    ul {
+      list-style-type: none;
+      margin-top: 50px;
+    }
+    ul li {
+      font-weight: bold;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #9e9e9e;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #333;
+      }
+    }
+  `,
+  contents: css`
+    background-color: #ffffff;
+    padding: 0 5%;
+  `,
+  mainPage: css`
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  `,
+  footer: css`
+    height: 135px;
+    color: rgb(110, 110, 110);
+    padding: 60px;
+    a {
+      text-decoration: underline;
+      color: rgb(110, 110, 110);
+      text-align: center;
+    }
+  `,
+};
+
+///////////////////////////////////////////////////////
 
 const Layout = () => {
-  const selColor = "selectColor";
-
   return (
-    <div className="wrapper">
-      <div className="sidebar">
-        <div className="logo">
-          <NavLink to="/">
+    <div css={styles.wrapper}>
+      <div css={styles.sidebar}>
+        <div css={styles.logo}>
+          <Link to="/">
             <h1>
               <span>Dev</span>Challenge.io
             </h1>
-          </NavLink>
+          </Link>
         </div>
 
         <ul>
           <li>
-            <NavLink
+            <Link
               to="/colors"
-              className={({ isActive }) => (isActive ? selColor : undefined)}
+              // css={({ isActive }) =>
+              //   isActive ? styles.selectColor : undefined
+              // }
             >
               Colors
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               to="/typography"
-              className={({ isActive }) => (isActive ? selColor : undefined)}
+              // css={({ isActive }) =>
+              //   isActive ? styles.selectColor : undefined
+              // }
             >
               Typography
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               to="/spaces"
-              className={({ isActive }) => (isActive ? selColor : undefined)}
+              // css={({ isActive }) =>
+              //   isActive ? styles.selectColor : undefined
+              // }
             >
               Spaces
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               to="/buttons"
-              className={({ isActive }) => (isActive ? selColor : undefined)}
+              // css={({ isActive }) =>
+              //   isActive ? styles.selectColor : undefined
+              // }
             >
               Buttons
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               to="/inputs"
-              className={({ isActive }) => (isActive ? selColor : undefined)}
+              // css={({ isActive }) =>
+              //   isActive ? styles.selectColor : undefined
+              // }
             >
               Inputs
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               to="/grid"
-              className={({ isActive }) => (isActive ? selColor : undefined)}
+              // css={({ isActive }) =>
+              //   isActive ? styles.selectColor : undefined
+              // }
             >
               Grid
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </div>
 
-      <div className="main-page">
+      <div css={styles.mainPage}>
         <main>
-          <div className="contents">
+          <div css={styles.contents}>
             <Outlet />
           </div>
         </main>
 
-        <footer>
+        <footer css={styles.footer}>
           <p>
             icons:{" "}
             <span>

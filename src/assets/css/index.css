@@ -3,6 +3,13 @@ body,
 #root {
   height: 100%;
 }
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333;
+}
 
 body {
   margin: 0;
